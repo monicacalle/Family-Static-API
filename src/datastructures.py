@@ -42,13 +42,13 @@ class FamilyStructure:
         for position, member in enumerate(self._members): 
             if member["id"] == int(id): 
                 kicked_member = self._members.pop(position) 
-        return kicked_member 
+                return kicked_member 
         
     def get_member(self, id):
         # fill this method and update the return
         for member in self._members:
             if member["id"] == int(id): 
-        return member
+                return member
         
     # this method is done, it returns a list with all the family members
     def get_all_members(self):
